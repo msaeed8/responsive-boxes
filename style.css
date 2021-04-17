@@ -9,14 +9,36 @@ body {
   box-sizing: border-box;
 }
 .main {
+  width: 12rem;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
 }
 .box {
-  width: 200px;
-  height: 200px;
-  margin: 20px;
+  width: 10rem;
+  height: 10rem;
+  margin: 1rem;
   background-color: crimson;
+}
+@media screen and (min-width: 500px) {
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+  .main {
+    width: 26rem;
+  }
+  .box {
+    margin: 1rem;
+    background-color: green;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .main {
+    width: 100%;
+  }
+  .box {
+    background-color: aqua;
+  }
 }
